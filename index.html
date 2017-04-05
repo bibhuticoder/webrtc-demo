@@ -1,0 +1,61 @@
+<html>
+<title>Playing with WebRTC</title>
+
+<head>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+
+<body>
+
+
+<div class="container">
+
+<br><br><br>
+	<div class="row">
+		<div class="col-md-6">
+			<label id="id"></label>
+			<br>
+			<div class="input-group" style="width: 400px">
+				<input type="text" id="peerid" class="form-control" placeholder="peer id of your friend" />
+				<div class="input-group-btn">			
+					<button id="connect" class="btn btn-success">Connect</button>
+					<button id="call" class="btn btn-primary">Video Call</button>
+				</div>
+			</div>
+			
+			<hr>
+			<video id="mine" autoplay style="border-style: solid; height: 200px; width: 300px"> </video>
+			<video id="other" autoplay style="border-style: solid; height: 200px; width: 300px"> </video>			
+		</div>
+
+		<div class="col-md-6">
+
+			<div class="input-group">
+				<input id="message" class="form-control" placeholder="Message" />
+				<div class="input-group-btn">
+					<button id="send" class="btn btn-info">Send</button>
+				</div>	
+			</div>			
+			<hr>
+			<p class="lead">Messages</p>			
+			<ul id="messages" class="list-group">
+			</ul>
+			
+		</div>
+	</div>
+
+</div>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+	
+</body>
+
+</html>
+
+
+
+
